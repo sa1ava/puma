@@ -86,30 +86,43 @@ const App = () => {
   }
 
   return (
-    <div>
-      <PlaylistSelector tracks={tracks} selectedVideoId={currentVideoId} onSelect={handleVideoSelect} />
-      <Player 
-        isPlaying={isPlaying}
-        isMuted={isMuted}
-        volume={volume}
-        videoId={currentVideoId} 
-        onVideoEnded={handleVideoEnded} 
-        onVideoProgress={handleProgress}
-        onVideoDuration={handleDuration}      
-      />
-      <PlayerProgressBar
-        progress={progress}
-        duration={duration}
-      />
-      <PlayerControls 
-        isPlaying={isPlaying} 
-        play={handlePlayVideo} 
-        isMuted={isMuted}
-        mute={handleMuteVideo}
-        volume={volume}
-        setVolume={handleVideoVolume}
-        playPrev={handlePlayPrevVideo} 
-        playNext={handlePlayNextVideo} />
+    <div className="player-container 
+      flex w-full h-full 
+      relative 
+      backdrop-blur-2xl bg-white/5 shadow-2xl 
+      border border-white/10 rounded-2xl
+      grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
+      <div className="left-panel flex flex-col items-center">
+        <PlaylistSelector 
+          tracks={tracks} 
+          selectedVideoId={currentVideoId} 
+          onSelect={handleVideoSelect} 
+        />
+      </div>
+      <div className="right-panel flex flex-col justify-between">
+        <Player 
+          isPlaying={isPlaying}
+          isMuted={isMuted}
+          volume={volume}
+          videoId={currentVideoId} 
+          onVideoEnded={handleVideoEnded} 
+          onVideoProgress={handleProgress}
+          onVideoDuration={handleDuration}      
+        />
+        <PlayerProgressBar
+          progress={progress}
+          duration={duration}
+        />
+        <PlayerControls 
+          isPlaying={isPlaying} 
+          play={handlePlayVideo} 
+          isMuted={isMuted}
+          mute={handleMuteVideo}
+          volume={volume}
+          setVolume={handleVideoVolume}
+          playPrev={handlePlayPrevVideo} 
+          playNext={handlePlayNextVideo} />
+      </div>
     </div>
   );
 };
