@@ -1,5 +1,6 @@
-import { BsFillPlayFill, BsFillPauseFill, BsFillSkipStartFill, BsFillSkipEndFill, BsFillVolumeUpFill, BsFillVolumeMuteFill, BsGithub, BsInfoLg, BsMusicNoteList } from "react-icons/bs";
+import { BsFillPlayFill, BsFillPauseFill, BsFillSkipStartFill, BsFillSkipEndFill, BsFillVolumeUpFill, BsFillVolumeMuteFill, BsGithub, BsEyeFill, BsEyeSlashFill, BsMusicNoteList } from "react-icons/bs";
 import { PlayerControlButton } from "./PlayerControlButton";
+import { TRACKS_JSON_URL, GITHUB_REPOSITORY_URL } from "../utils/constants";
 
 interface PlayerControlsProps {
   isPlaying: boolean;
@@ -10,6 +11,8 @@ interface PlayerControlsProps {
   setVolume: (value: number) => void;
   playPrev: () => void;
   playNext: () => void;
+  showOverlay: boolean;
+  toggleOverlay: () => void;
 };
 
 export const PlayerControls = ({ 
@@ -17,7 +20,9 @@ export const PlayerControls = ({
   isMuted, mute,
   volume, setVolume,
   playPrev, 
-  playNext 
+  playNext,
+  showOverlay,
+  toggleOverlay
 }: PlayerControlsProps) => {
 
   const controlIconSize = 25;
@@ -26,15 +31,21 @@ export const PlayerControls = ({
   return (
     <div className="control-container px-8 mb-10">
     <div className="main-controls flex justify-center items-center gap-10 mb-6">      
-      <PlayerControlButton onClick={playPrev}>
+      <PlayerControlButton
+        onClick={playPrev}
+        titleText="前の曲を再生">
         <BsFillSkipStartFill size={controlIconSize} color={controlIconColor} />      
       </PlayerControlButton>
-      <PlayerControlButton onClick={play}>
+      <PlayerControlButton 
+        onClick={play}
+        titleText={isPlaying ? "停止" : "再生"}>
         {isPlaying 
           ? <BsFillPauseFill size={controlIconSize} color={controlIconColor} />
           : <BsFillPlayFill size={controlIconSize} color={controlIconColor} />}
       </PlayerControlButton>
-      <PlayerControlButton onClick={playNext}>
+      <PlayerControlButton
+        onClick={playNext}
+        titleText="次の曲を再生">
         <BsFillSkipEndFill  size={controlIconSize} color={controlIconColor} />      
       </PlayerControlButton>
     </div>
@@ -59,13 +70,25 @@ export const PlayerControls = ({
         </div>      
       </div>
       <div className="right-controls flex gap-4">        
-        <PlayerControlButton onClick={play} size="w-8 h-8">
-          <BsInfoLg size={15} color={controlIconColor} />
+        <PlayerControlButton 
+          onClick={toggleOverlay}
+          size="w-8 h-8" 
+          titleText={showOverlay ? "オーバーレイを非表示" : "オーバーレイを表示"}>        
+          {showOverlay
+            ? <BsEyeFill size={15} color={controlIconColor} />
+            : <BsEyeSlashFill size={15} color={controlIconColor} />
+          }          
         </PlayerControlButton>
-        <PlayerControlButton onClick={() => window.open('https://github.com/sa1ava/puma/blob/main/src/assets/tracks.json', "_blank")} size="w-8 h-8">
+        <PlayerControlButton 
+          onClick={() => window.open(TRACKS_JSON_URL, "_blank")} 
+          size="w-8 h-8"
+          titleText="プレイリストの一覧">
           <BsMusicNoteList size={15} color={controlIconColor} />
         </PlayerControlButton>
-        <PlayerControlButton onClick={() => window.open('https://github.com/sa1ava/puma', "_blank")} size="w-8 h-8">
+        <PlayerControlButton 
+          onClick={() => window.open(GITHUB_REPOSITORY_URL, "_blank")} 
+          size="w-8 h-8"
+          titleText="GitHub">
           <BsGithub size={15} color={controlIconColor} />
         </PlayerControlButton>
       </div>

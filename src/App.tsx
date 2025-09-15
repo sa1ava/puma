@@ -1,10 +1,10 @@
+import { useMemo, useState } from "react";
 import { Player } from "./components/Player";
 import { PlaylistSelector } from "./components/PlaylistSelector";
 import { PlayerProgressBar } from "./components/PlayerProgressBar";
-import Tracks from "./assets/tracks.json";
-import { useMemo, useState } from "react";
-import type { track } from "./types/track";
 import { PlayerControls } from "./components/PlayerControls";
+import Tracks from "./assets/tracks.json";
+import type { track } from "./types/track";
 import type { progress } from "./types/progress";
 
 const App = () => {
@@ -33,7 +33,10 @@ const App = () => {
     loaded: 0,
     loadedSeconds: 0
   });
-  const [duration, setDuration] = useState<number>(0);  
+  const [duration, setDuration] = useState<number>(0); 
+  
+  // オーバーレイの管理
+  const [showOverlay, setShowOverlay] = useState<boolean>(true);
 
   // Player から動画の終了通知
   const handleVideoEnded = () => {
@@ -47,6 +50,7 @@ const App = () => {
 
     if (selectedIndex !== -1) {
       setCurrentIndex(selectedIndex);
+      setIsPlaying(true);
     }
   }
 
@@ -85,30 +89,39 @@ const App = () => {
     setDuration(duration);
   }
 
+  // 動画オーバーレイの切り替え
+  const handleOverlay = () => {
+    setShowOverlay(!showOverlay);
+  }
+
   return (
-    <div className="player-container 
-      flex w-full h-full 
-      relative 
-      backdrop-blur-2xl bg-white/5 shadow-2xl 
-      border border-white/10 rounded-2xl
-      grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
-      <div className="left-panel flex flex-col items-center">
+    <div className="player-container flex flex-col lg:flex-row h-full backdrop-blur-2xl bg-white/5 shadow-2xl border border-white/10 rounded-2xl">
+      <div className="left-panel
+        w-full h-1/2 
+        lg:w-1/2 lg:h-full 
+        overflow-y-auto
+        [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar-track]:bg-neutral-700
+        [&::-webkit-scrollbar-thumb]:bg-neutral-500">
         <PlaylistSelector 
           tracks={tracks} 
           selectedVideoId={currentVideoId} 
           onSelect={handleVideoSelect} 
         />
       </div>
-      <div className="right-panel flex flex-col justify-between">
+      <div className="right-panel w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col">
+        <div className="flex-1">
         <Player 
           isPlaying={isPlaying}
           isMuted={isMuted}
           volume={volume}
-          videoId={currentVideoId} 
+          videoId={currentVideoId}
+          showOverlay={showOverlay}
           onVideoEnded={handleVideoEnded} 
           onVideoProgress={handleProgress}
           onVideoDuration={handleDuration}      
         />
+        </div>
         <PlayerProgressBar
           progress={progress}
           duration={duration}
@@ -119,9 +132,12 @@ const App = () => {
           isMuted={isMuted}
           mute={handleMuteVideo}
           volume={volume}
+          showOverlay={showOverlay}
+          toggleOverlay={handleOverlay}
           setVolume={handleVideoVolume}
           playPrev={handlePlayPrevVideo} 
-          playNext={handlePlayNextVideo} />
+          playNext={handlePlayNextVideo}          
+         />
       </div>
     </div>
   );

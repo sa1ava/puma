@@ -19,15 +19,7 @@ export const PlayerProgressBar = ({ progress, duration}: PlayerProgressBarProps)
           "            
         style={{width: `${progress.played * 100}%`}} />
       </div>
-      <div 
-        className="time-info flex flex-between text-sm text-black/60 font-mono"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "14px",
-          color: "#666",
-          marginBottom: "8px",
-        }}>
+      <div className="time-info flex justify-between text-sm text-black/60 font-mono my-2 text-white/50">
         <span className="current-time">{formatTime(progress.playedSeconds)}</span>
         <span className="duration">{formatTime(duration)}</span>
       </div>

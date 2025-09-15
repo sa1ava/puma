@@ -1,5 +1,7 @@
 export interface track {
-  index: string;
+  index: number;
   title: string;
   videoId: string;
+  duration: number;
+  artist: string;
 }

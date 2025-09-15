@@ -1,17 +1,499 @@
 [
   {
-    "index": "1",
-    "title": "Go Go Yuureisen",
-    "videoId": "qwJyInkd_l8"
+    "index": 1,
+    "title": "Hopes and Dreams",
+    "videoId": "utYouad0v5E",
+    "duration": 48,
+    "artist": "Garoad - Topic"
   },
   {
-    "index": "2",
-    "title": "Kubinashi Kankodori",
-    "videoId": "wlmoMunw-iY"
+    "index": 2,
+    "title": "A Neon Glow Lights the Way",
+    "videoId": "4fNrolHxV-g",
+    "duration": 153,
+    "artist": "Garoad - Topic"
   },
   {
-    "index": "3",
-    "title": "Koi to Byounetsu",
-    "videoId": "uAPkivh6Jlo"
+    "index": 3,
+    "title": "Welcome to VA-11 Hall-A",
+    "videoId": "2Cz6Y4iqUSA",
+    "duration": 189,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 4,
+    "title": "Every Day Is Night",
+    "videoId": "H-AfGh8gmiQ",
+    "duration": 221,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 5,
+    "title": "Commencing Simulation",
+    "videoId": "WBT8aCfs5GQ",
+    "duration": 112,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 6,
+    "title": "Drive Me Wild",
+    "videoId": "zbRG1xyJYtc",
+    "duration": 229,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 7,
+    "title": "Good for Health, Bad for Education",
+    "videoId": "5eQ7IGfGoKM",
+    "duration": 195,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 8,
+    "title": "Who Was I?",
+    "videoId": "M_ZYBwIgk2c",
+    "duration": 81,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 9,
+    "title": "Troubling News",
+    "videoId": "BkTVlH9qGbg",
+    "duration": 77,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 10,
+    "title": "A Gaze That Invited Disaster",
+    "videoId": "9ry5uO9exT4",
+    "duration": 224,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 11,
+    "title": "Friendly Conversation",
+    "videoId": "OOlWaWTlfuI",
+    "duration": 136,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 12,
+    "title": "You've Got Me",
+    "videoId": "ULEtZC5FcMA",
+    "duration": 209,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 13,
+    "title": "Better Luck Next Time",
+    "videoId": "MIejZdZPwCY",
+    "duration": 20,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 14,
+    "title": "Transition I",
+    "videoId": "ilC39oBAx_s",
+    "duration": 37,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 15,
+    "title": "Umemoto",
+    "videoId": "9LiTxlhMMrI",
+    "duration": 218,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 16,
+    "title": "JC Elton's",
+    "videoId": "LRnJmTX9_gA",
+    "duration": 106,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 17,
+    "title": "Go! Go! Steaming-Chan!",
+    "videoId": "Vt1dxYxOc6Q",
+    "duration": 94,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 18,
+    "title": "All Systems, Go!",
+    "videoId": "5RHVA5GgB88",
+    "duration": 222,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 19,
+    "title": "Where Do I Go from Here?",
+    "videoId": "YiASQortdPA",
+    "duration": 119,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 20,
+    "title": "Will You Remember Me?",
+    "videoId": "7CCMmb187lM",
+    "duration": 107,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 21,
+    "title": "Everything Will Be Okay",
+    "videoId": "fneFD6BGVGA",
+    "duration": 143,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 22,
+    "title": "March of the White Knights",
+    "videoId": "TQKZECTzZ4U",
+    "duration": 114,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 23,
+    "title": "A. Rene",
+    "videoId": "G01GIs8GJ-A",
+    "duration": 205,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 24,
+    "title": "Safe Haven",
+    "videoId": "1h39vfoLb_4",
+    "duration": 160,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 25,
+    "title": "Neo Avatar",
+    "videoId": "K0k0l5D41tg",
+    "duration": 223,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 26,
+    "title": "Those Who Dwell in Shadows",
+    "videoId": "UNVOqRpf9vg",
+    "duration": 196,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 27,
+    "title": "Nighttime Maneuvers",
+    "videoId": "CewMtQEFF7o",
+    "duration": 247,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 28,
+    "title": "A Star Pierces the Darkness",
+    "videoId": "wMBStthI4DU",
+    "duration": 142,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 29,
+    "title": "Calicomp 1.1: Startup",
+    "videoId": "tHygqCJjiSs",
+    "duration": 20,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 30,
+    "title": "Calicomp 1.1: Shutdown",
+    "videoId": "i5WB0IrGgAQ",
+    "duration": 20,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 31,
+    "title": "Transition II",
+    "videoId": "Sx7QYFdPjo8",
+    "duration": 70,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 32,
+    "title": "Your Love Is a Drug",
+    "videoId": "fBgVj1zabVc",
+    "duration": 181,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 33,
+    "title": "Through the Storm, We Will Find a Way",
+    "videoId": "rp5wZRmje4o",
+    "duration": 208,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 34,
+    "title": "Synthestitch",
+    "videoId": "ReTWbFfFlsg",
+    "duration": 282,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 35,
+    "title": "Snowfall",
+    "videoId": "nJ5_-pINV0k",
+    "duration": 171,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 36,
+    "title": "The Answer Lies Within",
+    "videoId": "2YPybnhx6I4",
+    "duration": 162,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 37,
+    "title": "Dawn Approaches",
+    "videoId": "vdzG0UU3OHw",
+    "duration": 251,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 38,
+    "title": "With Renewed Hope, We Continue Forward",
+    "videoId": "SJN9k1sEw7s",
+    "duration": 179,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 39,
+    "title": "Last Call",
+    "videoId": "k7cTMl-4q8Y",
+    "duration": 133,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 40,
+    "title": "Reminiscence",
+    "videoId": "7SqxaxRt2Ug",
+    "duration": 157,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 41,
+    "title": "Believe in Me Who Believes in You",
+    "videoId": "XkDdo7brO24",
+    "duration": 280,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 42,
+    "title": "Final Result",
+    "videoId": "z5llQGlxgyU",
+    "duration": 71,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 43,
+    "title": "Until We Meet Again",
+    "videoId": "m6nDyw5G26U",
+    "duration": 53,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 44,
+    "title": "Digital Drive",
+    "videoId": "qmaTQSVGQ3s",
+    "duration": 94,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 45,
+    "title": "Metropolis",
+    "videoId": "kvJEZwUip0M",
+    "duration": 67,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 46,
+    "title": "Karmotrine Dream",
+    "videoId": "yiFuW7U6XPU",
+    "duration": 146,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 47,
+    "title": "Neon District",
+    "videoId": "bpu4rFUCCVw",
+    "duration": 250,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 48,
+    "title": "Strictly Business",
+    "videoId": "ci50bHA6fKg",
+    "duration": 152,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 49,
+    "title": "Skyline",
+    "videoId": "lNmFwSzy6kM",
+    "duration": 193,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 50,
+    "title": "A New Frontier",
+    "videoId": "SobZI445uRc",
+    "duration": 253,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 51,
+    "title": "Another Satisfied Customer",
+    "videoId": "vFrFYXo5YJs",
+    "duration": 44,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 52,
+    "title": "Dusk",
+    "videoId": "D7MRnjkQ-fY",
+    "duration": 199,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 53,
+    "title": "Meet the Staff",
+    "videoId": "wZSQ7pjH1hA",
+    "duration": 218,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 54,
+    "title": "Heart of the City",
+    "videoId": "s_jsKxJQGIk",
+    "duration": 152,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 55,
+    "title": "Spirit Potion",
+    "videoId": "5tdiPn5_ZBM",
+    "duration": 205,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 56,
+    "title": "A City That Never Sleeps",
+    "videoId": "j8IX0CXvT0M",
+    "duration": 106,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 57,
+    "title": "Base of the Titans",
+    "videoId": "qnjdYKzBx_c",
+    "duration": 154,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 58,
+    "title": "Follow the Trail",
+    "videoId": "Az-eDschSEA",
+    "duration": 171,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 59,
+    "title": "Out of Orbit",
+    "videoId": "vWgs9DqYQoc",
+    "duration": 197,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 60,
+    "title": "Tense",
+    "videoId": "3eXRr4_TPaw",
+    "duration": 109,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 61,
+    "title": "Underground Club",
+    "videoId": "muzG9-OXxO8",
+    "duration": 132,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 62,
+    "title": "Showtime!",
+    "videoId": "JX_OInOo5n4",
+    "duration": 199,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 63,
+    "title": "Glitch City (Bonus Track)",
+    "videoId": "4S7pza1IVGw",
+    "duration": 147,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 64,
+    "title": "Snowfall (Senzafine Remix) (Bonus Track)",
+    "videoId": "2DuksQ2EB0c",
+    "duration": 148,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 65,
+    "title": "Base of the Titans (Sage Remix) (Bonus Track)",
+    "videoId": "wimxeWW5x4A",
+    "duration": 98,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 66,
+    "title": "Truth (Bonus Track)",
+    "videoId": "eZ0TEzr8dSM",
+    "duration": 139,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 67,
+    "title": "Lifebeat of Lilim (Bonus Track)",
+    "videoId": "LRouzANEgE4",
+    "duration": 198,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 68,
+    "title": "Your Love Is a Drug (Insaneintherain Arrange) (Bonus Track)",
+    "videoId": "A_s2gNemvR8",
+    "duration": 291,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 69,
+    "title": "Lifebeat of Lilim (Instrumental Version) (Bonus Track)",
+    "videoId": "KO2woH3Gnh8",
+    "duration": 198,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 70,
+    "title": "Shine Spark (Instrumental Version) (Bonus Track)",
+    "videoId": "3QpfFCgRoqw",
+    "duration": 302,
+    "artist": "Garoad - Topic"
+  },
+  {
+    "index": 71,
+    "title": "[VA-11 Hall-A] OST - Truth",
+    "videoId": "qyupKeWvVjA",
+    "duration": 65,
+    "artist": "Chronobreak"
   }
 ]
